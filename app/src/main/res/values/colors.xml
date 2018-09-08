@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="normal">#c2c2c2</color>
+    <color name="important">#8fb1ff</color>
+    <color name="urgent">#ffca83</color>
+    <color name="urgAndImp">#ff8d86</color>
+    <color name="complete">#81ff7d</color>
+    <color name="background">#ffffff</color>
+    <color name="defaultText">#000000</color>
+    <color name="buttonBackground">#c1c1c1</color>
+</resources>

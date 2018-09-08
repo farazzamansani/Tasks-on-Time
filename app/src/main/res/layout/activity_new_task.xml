@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="au.edu.utas.tasksontime.newTask"
+    android:orientation="vertical"
+    android:padding="10dp"
+    
+    android:id="@+id/newTaskRoot">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:layout_marginBottom="10dp"
+                android:textSize="20dp"
+                android:text="Task Name:"/>
+            <EditText
+                android:maxLength="255"
+                android:textColor="@color/defaultText"
+                android:singleLine="true"
+                android:layout_marginBottom="10dp"
+                android:textSize="20dp"
+                android:id="@+id/et_newName"
+                android:layout_weight="1"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:textColor="@color/defaultText"
+                android:layout_marginBottom="10dp"
+                android:textSize="20dp"
+                android:text="Due Date:"/>
+            <TextView
+                android:textColor="@color/defaultText"
+                android:layout_marginBottom="10dp"
+                android:paddingRight="10dp"
+                android:textSize="20dp"
+                android:id="@+id/tv_newDate"
+                android:textAlignment="textEnd"
+                android:text="NO DATE SET"
+                android:layout_weight="1"/>
+        </TableRow>
+        <LinearLayout
+            android:textColor="@color/defaultText"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:id="@+id/cb_important"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:button="@null"
+                
+                android:background="?android:attr/listChoiceIndicatorMultiple"/>
+            <TextView
+                
+                android:text="Important"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <CheckBox
+                android:id="@+id/cb_urgent"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:button="@null"
+                android:background="?android:attr/listChoiceIndicatorMultiple"/>
+            <TextView
+                android:text="Urgent"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TableRow>
+            <TextView
+                android:textColor="@color/defaultText"
+                android:layout_marginBottom="10dp"
+                android:textSize="20dp"
+                android:text="Unit Code:"/>
+            <EditText
+                android:singleLine="true"
+                android:layout_marginBottom="10dp"
+                android:textSize="20dp"
+                android:maxLength="50"
+                android:id="@+id/et_newUnit"
+                android:layout_weight="1"/>
+        </TableRow>
+        <LinearLayout
+            android:paddingRight="10dp">
+            <TextView
+                android:textColor="@color/defaultText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textSize="20dp"
+                android:layout_weight="1"
+                android:text="Assessment Weight:"/>
+            <EditText
+                android:textColor="@color/defaultText"
+                android:inputType="number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textSize="20dp"
+                android:textAlignment="textEnd"
+                android:layout_gravity="end"
+                android:maxWidth="20dp"
+                android:maxLength="3"
+                android:id="@+id/et_newWeight"
+                android:layout_weight="1"/>
+            <TextView
+                android:textColor="@color/defaultText"
+                android:textSize="20dp"
+                android:text="%"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </TableLayout>
+    <Button
+        android:background="@android:drawable/btn_default"
+        android:textColor="@color/defaultText"
+        android:id="@+id/btn_saveNewtask"
+        android:text="Done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

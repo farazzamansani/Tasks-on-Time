@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">TasksOnTime</string>
+    <string-array name="sort_options">
+        <item>Date</item>
+        <item>Unit Code</item>
+        <item>Priority</item>
+    </string-array>
+    <string-array name="quiz_array">
+        <item>None</item>
+        <item>Never</item>
+        <item>Rarely</item>
+        <item>Occasionally</item>
+        <item>Regularly</item>
+        <item>Always</item>
+    </string-array>
+</resources>

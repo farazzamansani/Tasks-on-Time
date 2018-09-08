@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="au.edu.utas.tasksontime.MainActivity"
+    android:orientation="vertical"
+    android:padding="10dip"
+    android:id="@+id/main_root">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:src="@drawable/logo"/>
+    <Button
+        android:background="@android:drawable/btn_default"
+        android:id="@+id/newTaskButton"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Record new Task..." />
+    <Button
+        android:id="@+id/taskListButton"
+        android:background="@android:drawable/btn_default"
+        android:layout_margin="10dp"
+        android:text="View Tasks..."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/questionnaire"
+        android:background="@android:drawable/btn_default"
+        android:layout_margin="10dp"
+        android:text="Questionnaire"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:text="Take the questionnaire to rate your time management habits..."/>
+</LinearLayout>
